@@ -3,7 +3,7 @@
 import React from 'react'
 import { StyleSheet, Button, View, TextInput, FlatList, Text, ActivityIndicator,} from 'react-native';
 import FilmItem from './FilmItem.js'
-import { getFilmsFromApiWithSearchedText } from '../API/TMDBApi.js'
+import { getFilmsFromApiWithSearchedText } from '../API/TMDBApi'
 
 class Search extends React.Component {
   constructor(props) {

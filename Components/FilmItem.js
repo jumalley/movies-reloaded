@@ -1,8 +1,8 @@
 // Components/FilmItem.js
 
-import React from 'react';
-import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
-import { getImageFromApi } from '../API/TMDBApi.js';
+import React from 'react'
+import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native'
+import { getImageFromApi } from '../API/TMDBApi'
 
 class FilmItem extends React.Component {
   render() {
@@ -81,4 +81,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FilmItem;
+export default FilmItem
