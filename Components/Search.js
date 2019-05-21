@@ -53,9 +53,11 @@ class Search extends React.Component {
     })
   }
 
+  _displayDetailForFilm = (idFilm) => {
+    console.log("Display film with id " + idFilm);
+  }
+
 render() {
-  //version
-  console.log("movies-reloaded v.1.2")
   //debug info state isLoading
   //console.log(this.state.isLoading);
     return (
@@ -71,7 +73,7 @@ render() {
               this._loadFilms()
             }
           }}
-          renderItem={({item}) => <FilmItem film={item}/>}
+          renderItem={({item}) => <FilmItem film={item} displayDetailForFilm={this._displayDetailForFilm}/>}
         />
         {this._displayLoading()}
       </View>
@@ -81,8 +83,7 @@ render() {
 
 const styles = StyleSheet.create ({
   main_container: {
-    flex: 1,
-    marginTop: 25
+    flex: 1
   },
   textinput: {
     marginTop: 5,
